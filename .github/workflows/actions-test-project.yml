@@ -30,7 +30,7 @@ jobs:
         run: mvn --batch-mode package
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
-          with:
-            name: target-artifact
-            path: /target
-            retention-days: 1
+        with:
+          name: target-artifact
+          path: /target
+          retention-days: 1
