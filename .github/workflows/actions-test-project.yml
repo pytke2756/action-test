@@ -31,6 +31,6 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
           with:
-            name: targetTest
-            path: target
+            name: target-artifact
+            path: /target
             retention-days: 1
