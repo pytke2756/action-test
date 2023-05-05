@@ -14,7 +14,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Test with Maven
-        run: mvn --batch-mode --update-snapshots test
+        run: mvn --batch-mode test
   build:
     runs-on: ubuntu-latest
     needs: test
@@ -27,4 +27,4 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots package
+        run: mvn --batch-mode package
